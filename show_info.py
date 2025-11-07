@@ -1,5 +1,5 @@
-def show_info(*args):
-    print(f"{len(args)} arguments were received.")
-    print("The values are:", args)
+def show_data(**info):
+    for key, value in info.items():
+        print(f"{key}: {value}")
 
-show_info(4, 5, 6)
+show_data(name="Ly", age=24, city="Madrid")
